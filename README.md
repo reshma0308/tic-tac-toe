@@ -20,6 +20,6 @@ A simple and interactive Tic-Tac-Toe game built using HTML, CSS, and JavaScript.
 - CSS3
 - JavaScript (Vanilla)
 
----
+
 
 
