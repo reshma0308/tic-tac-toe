@@ -1,0 +1,120 @@
+* {
+    margin: 10;
+    padding: 10;
+  }
+  
+  body {
+    background-color: #829dda;
+    text-align: center;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 16vmin;
+    width: 16vmin;
+    border-radius: 10rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #3c2b2a;
+    background-color: #cae8f5;
+  }
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #1d1d69;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  .confetti-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: visible;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: red;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  
+  .confetti:nth-child(2) { background-color: yellow; left: 40%; }
+  .confetti:nth-child(3) { background-color: blue; left: 60%; }
+  .confetti:nth-child(4) { background-color: green; left: 45%; }
+  .confetti:nth-child(5) { background-color: orange; left: 55%; }
+  .confetti:nth-child(6) { background-color: purple; left: 35%; }
+  .confetti:nth-child(7) { background-color: hotpink; left: 65%; }
+  .confetti:nth-child(8) { background-color: cyan; left: 70%; }
+  
+  .pop .confetti {
+    animation: fall 3s ease-out forwards;
+  }
+  
+  @keyframes fall {
+    0% {
+      opacity: 1;
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(300px) rotate(720deg);
+    }
+  }
+  
+  
