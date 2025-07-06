@@ -3,40 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe - Beautiful Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="msg-container hide">
-      <p id="msg">Winner</p>
-      <button id="new-btn">New Game</button>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Tic Tac Toe</h1>
+            <div class="game-subtitle">A Beautiful Game Experience</div>
+        </header>
+        
+        <main class="game-main">
+            <div class="game-info" id="gameInfo" role="status" aria-live="polite">
+                Player X's Turn
+            </div>
+            
+            <div class="game-board" id="gameBoard" role="grid" aria-label="Tic Tac Toe Board">
+                <button class="cell" data-index="0" aria-label="Cell 1" role="gridcell"></button>
+                <button class="cell" data-index="1" aria-label="Cell 2" role="gridcell"></button>
+                <button class="cell" data-index="2" aria-label="Cell 3" role="gridcell"></button>
+                <button class="cell" data-index="3" aria-label="Cell 4" role="gridcell"></button>
+                <button class="cell" data-index="4" aria-label="Cell 5" role="gridcell"></button>
+                <button class="cell" data-index="5" aria-label="Cell 6" role="gridcell"></button>
+                <button class="cell" data-index="6" aria-label="Cell 7" role="gridcell"></button>
+                <button class="cell" data-index="7" aria-label="Cell 8" role="gridcell"></button>
+                <button class="cell" data-index="8" aria-label="Cell 9" role="gridcell"></button>
+            </div>
+            
+            <div class="game-controls">
+                <button class="reset-btn" id="resetBtn" aria-label="Reset Game">
+                    <span class="btn-text">Reset Game</span>
+                </button>
+             <div class="game-instructions">
+                 <p>Press <kbd>R</kbd> to reset the game</p>
+             </div>
+            </div>
+        </main>
     </div>
-    <main>
-      <h1>Tic Tac Toe</h1>
-      <div class="container">
-        <div class="game">
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
+    
+    <footer class="page-footer">
+       
+        <div class="copyright">
+            <p>&copy; 2024 Tic Tac Toe Game. All Rights Reserved.</p>
         </div>
-      </div>
-      <button id="reset-btn">Reset Game</button>
-    </main>
-    <script src="./app.js"></script>
-    <div class="confetti-wrapper">
-      <div class="confetti"></div>
-      <div class="confetti"></div>
-      <div class="confetti"></div>
-      <div class="confetti"></div>
-      <div class="confetti"></div>
-      <div class="confetti"></div>
-      <div class="confetti"></div>
-      <div class="confetti"></div>
-    </div>
+    </footer>
+    
+    <script src="app.js"></script>
 </body>
 </html>
